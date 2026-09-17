@@ -1,16 +1,6 @@
-# Vault PDA - Solana Security Practice Program
+# Vault PDA - Solana Token Vault Program
 
-A Solana vault program built with Anchor for security research and vulnerability analysis practice. This program implements a token vault system with share-based deposits and redemptions, along with protocol ownership management.
-
-## ⚠️ SECURITY WARNING
-
-**DO NOT USE THIS CODE IN PRODUCTION!**
-
-This program contains **intentional security vulnerabilities** for educational and training purposes. It is designed for security researchers and developers to practice identifying and exploiting common Solana program vulnerabilities.
-
-**Using this code with real funds will result in loss of assets.**
-
-> **Note for Security Researchers**: This program is designed as a practice environment for finding and exploiting common Solana program vulnerabilities. Some tests are intentionally left as placeholders for you to implement proof-of-concept exploits.
+A Solana vault program built with Anchor. This program implements a token vault system with share-based deposits and redemptions, along with protocol ownership management.
 
 ## Overview
 
@@ -154,7 +144,6 @@ Use this if you already have a validator running on `localhost:8899`.
 
 The test suite (`tests/vault-pda.ts`) includes:
 
-**Functional Tests:**
 1. Initializes the protocol
 2. Creates an underlying token mint
 3. Initializes a vault for the underlying token
@@ -162,21 +151,6 @@ The test suite (`tests/vault-pda.ts`) includes:
 5. Makes second deposit (proportional share calculation)
 6. Redeems partial shares
 7. Redeems all remaining shares
-
-**Security Tests:**
-8. PoC Placeholder - For security researchers to implement exploits
-9. Second PoC Placeholder - For security researchers to implement exploits
-
-> **For Security Researchers**: Tests 8 and 9 are intentionally left as placeholders. Your task is to analyze the program, find vulnerabilities, and implement proof-of-concept exploits in these test cases.
-
-## Security Practice
-
-This program is designed to help beginner security researchers practice:
-- Finding missing account validations
-- Identifying authorization vulnerabilities
-- Understanding the difference between pubkey checks and signature verification
-- Learning why passing tests don't guarantee secure code
-- Writing proof-of-concept exploits
 
 ## Program ID
 
@@ -202,4 +176,3 @@ ISC
 - [Anchor Documentation](https://www.anchor-lang.com/)
 - [Solana Documentation](https://docs.solana.com/)
 - [SPL Token Documentation](https://spl.solana.com/token)
-- [Solana Security Best Practices](https://github.com/coral-xyz/sealevel-attacks)

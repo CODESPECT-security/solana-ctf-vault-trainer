@@ -435,12 +435,4 @@ describe("vault-pda", () => {
     console.log("  Final vault balance:", vaultBalanceAfter);
     console.log("  Final shares:", sharesAfter);
   });
-
-  it("PoC Placeholder", async () => {
-    console.log("\n=== PoC Placeholder Test ===");
-  });
-
-  it("Second PoC placeholder", async () => {
-    console.log("\n=== Second PoC Placeholder Test ===");
-  });
 });
